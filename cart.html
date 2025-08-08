@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart – RebuyMart</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">RebuyMart</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" class="active cart-link">Cart<span id="cart-count" class="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container cart-main">
+    <h2>Your Cart</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-summary">
+      <p><strong>Subtotal:</strong> $<span id="cart-total">0.00</span></p>
+      <h3>Shipping Details</h3>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn">Place Order</button>
+      </form>
+    </div>
+    <div id="order-message" class="order-message" style="display:none;"></div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 RebuyMart. Designed for demonstration purposes.</p>
+    </div>
+  </footer>
+</body>
+</html>

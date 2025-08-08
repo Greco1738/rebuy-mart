@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products – RebuyMart</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">RebuyMart</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" class="cart-link">Cart<span id="cart-count" class="cart-count"></span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-main container">
+    <h2>Our Products</h2>
+    <nav class="product-nav">
+      <a href="#supplements">Supplements</a>
+      <a href="#pets">Pet Supplies</a>
+      <a href="#sports">Sports & Fitness</a>
+      <a href="#mealkits">Meal Kits</a>
+    </nav>
+
+    <!-- Supplements Section -->
+    <section id="supplements" class="product-section">
+      <h3>Health & Supplements</h3>
+      <div class="product-grid">
+        <!-- Daily Multivitamin -->
+        <div class="product-card">
+          <img src="images/multivitamin.jpg" alt="Daily multivitamin capsules">
+          <h4>Daily Multivitamin Capsules</h4>
+          <p class="price">$19.99</p>
+          <p>Balanced blend of essential vitamins and minerals to support everyday health.</p>
+          <button class="add-to-cart" data-product-id="supp-1" data-name="Daily Multivitamin" data-price="19.99">Add to Cart</button>
+        </div>
+        <!-- Omega-3 Softgels -->
+        <div class="product-card">
+          <img src="images/multivitamin.jpg" alt="Organic Omega‑3 softgels">
+          <h4>Organic Omega‑3 Softgels</h4>
+          <p class="price">$24.99</p>
+          <p>Sustainably sourced fish oil to support heart and brain health.</p>
+          <button class="add-to-cart" data-product-id="supp-2" data-name="Omega-3 Softgels" data-price="24.99">Add to Cart</button>
+        </div>
+        <!-- Probiotic Digestive -->
+        <div class="product-card">
+          <img src="images/multivitamin.jpg" alt="Probiotic digestive capsules">
+          <h4>Probiotic Digestive Capsules</h4>
+          <p class="price">$21.99</p>
+          <p>Advanced formula with live cultures for gut balance and immunity.</p>
+          <button class="add-to-cart" data-product-id="supp-3" data-name="Probiotic Capsules" data-price="21.99">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pet Supplies Section -->
+    <section id="pets" class="product-section">
+      <h3>Pet Supplies</h3>
+      <div class="product-grid">
+        <!-- Dog Food -->
+        <div class="product-card">
+          <img src="images/pet_supplies.png" alt="Grain‑free dog food">
+          <h4>Grain‑Free Adult Dog Food (2kg)</h4>
+          <p class="price">$29.99</p>
+          <p>Protein‑rich kibble formulated for healthy digestion and shiny coats.</p>
+          <button class="add-to-cart" data-product-id="pet-1" data-name="Dog Food (2kg)" data-price="29.99">Add to Cart</button>
+        </div>
+        <!-- Cat Food -->
+        <div class="product-card">
+          <img src="images/pet_supplies.png" alt="Natural cat food">
+          <h4>All‑Natural Cat Food (1.5kg)</h4>
+          <p class="price">$24.99</p>
+          <p>Complete nutrition with real meat and no fillers – perfect for picky felines.</p>
+          <button class="add-to-cart" data-product-id="pet-2" data-name="Cat Food (1.5kg)" data-price="24.99">Add to Cart</button>
+        </div>
+        <!-- Pet Supplements -->
+        <div class="product-card">
+          <img src="images/pet_supplies.png" alt="Pet joint health chews">
+          <h4>Joint Health Supplement Chews</h4>
+          <p class="price">$14.99</p>
+          <p>Delicious soft chews with glucosamine and chondroitin for joint mobility.</p>
+          <button class="add-to-cart" data-product-id="pet-3" data-name="Joint Health Chews" data-price="14.99">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports & Fitness Section -->
+    <section id="sports" class="product-section">
+      <h3>Sports & Fitness</h3>
+      <div class="product-grid">
+        <!-- Resistance Band Set -->
+        <div class="product-card">
+          <img src="images/sports.png" alt="Resistance band set">
+          <h4>Resistance Band Set</h4>
+          <p class="price">$17.99</p>
+          <p>Five different resistance levels for stretching, strength training and rehabilitation.</p>
+          <button class="add-to-cart" data-product-id="sport-1" data-name="Resistance Band Set" data-price="17.99">Add to Cart</button>
+        </div>
+        <!-- Water Bottle -->
+        <div class="product-card">
+          <img src="images/sports.png" alt="Water bottle">
+          <h4>High‑Performance Water Bottle</h4>
+          <p class="price">$12.99</p>
+          <p>BPA‑free insulated bottle keeps drinks cold or hot during workouts.</p>
+          <button class="add-to-cart" data-product-id="sport-2" data-name="Water Bottle" data-price="12.99">Add to Cart</button>
+        </div>
+        <!-- Fitness Tracker Strap -->
+        <div class="product-card">
+          <img src="images/sports.png" alt="Fitness tracker strap">
+          <h4>Fitness Tracker Strap</h4>
+          <p class="price">$29.99</p>
+          <p>Comfortable replacement strap compatible with most smartwatches.</p>
+          <button class="add-to-cart" data-product-id="sport-3" data-name="Fitness Tracker Strap" data-price="29.99">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meal Kits & Food Section -->
+    <section id="mealkits" class="product-section">
+      <h3>Meal Kits & Food</h3>
+      <div class="product-grid">
+        <!-- Meal Kit Subscription -->
+        <div class="product-card">
+          <img src="images/mealkit.png" alt="Meal kit subscription">
+          <h4>Weekly Meal Kit Subscription (4 meals)</h4>
+          <p class="price">$49.99</p>
+          <p>Fresh ingredients and easy recipes delivered to your doorstep every week.</p>
+          <button class="add-to-cart" data-product-id="food-1" data-name="Weekly Meal Kit" data-price="49.99">Add to Cart</button>
+        </div>
+        <!-- Protein Powder -->
+        <div class="product-card">
+          <img src="images/mealkit.png" alt="Protein powder">
+          <h4>Premium Protein Powder (1kg)</h4>
+          <p class="price">$35.99</p>
+          <p>High‑quality protein blend ideal for post‑workout recovery or meal replacement.</p>
+          <button class="add-to-cart" data-product-id="food-2" data-name="Protein Powder" data-price="35.99">Add to Cart</button>
+        </div>
+        <!-- Snack Box -->
+        <div class="product-card">
+          <img src="images/mealkit.png" alt="Snack box">
+          <h4>Snack Box Variety Pack</h4>
+          <p class="price">$19.99</p>
+          <p>An assortment of healthy snacks including nuts, dried fruit, and granola bars.</p>
+          <button class="add-to-cart" data-product-id="food-3" data-name="Snack Box" data-price="19.99">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 RebuyMart. Designed for demonstration purposes.</p>
+    </div>
+  </footer>
+</body>
+</html>
